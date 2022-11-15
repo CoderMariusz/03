@@ -1,0 +1,12 @@
+{
+  "news": [
+    {
+      "name": "fisrt",
+      "second": "lalala"
+    },
+    {
+      "name": "second",
+      "second": "blabla"
+    }
+  ]
+}
