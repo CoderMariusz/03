@@ -37,7 +37,6 @@ function NewsElement(title, text) {
 
   wrapper.classList.add("new");
   return wrapper;
-  console.log(wrapper);
 }
 
 function addElementToList(where, data) {
@@ -49,9 +48,5 @@ function addElementToList(where, data) {
     document.querySelector(where).insertAdjacentElement("beforeend", el);
   });
 }
-
-const func = (e) => {
-  console.log("jestem funkcja strzalowa");
-};
 
 start();
