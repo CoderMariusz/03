@@ -6,6 +6,7 @@ body {
   --DarkGrayishBlue: hsl(236, 13%, 42%);
   --VeryDarkBlue: hsl(240, 100%, 5%);
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -62,16 +63,17 @@ main {
   font-size: 32px;
   font-weight: 700;
 }
-.news div {
+
+.new {
   margin-top: 35px;
   border-bottom: 1px solid var(--GrayishBlue);
 }
-.news div h2 {
+.new h2 {
   font-size: 20px;
   line-height: 24px;
   color: white;
 }
-.news div p {
+.new p {
   margin-top: 8px;
   font-weight: 400;
   font-size: 15px;
