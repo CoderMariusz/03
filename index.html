@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div class="logo" id="top">
         <img src="./assets/images/logo.svg" alt="logo" />
       </div>
       <div class="menu" id="menu">
@@ -24,11 +24,11 @@
           <img src="./assets/images/icon-menu-close.svg" alt="" />
         </div>
         <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#news">New</a></li>
+          <li><a href="#article">Popular</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Categories</a></li>
         </ul>
       </nav>
     </header>
@@ -37,38 +37,20 @@
         <div class="hero-img">
           <img src="./assets/images/image-web-3-mobile.jpg" alt="retro" />
         </div>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button class="button hero-button" type="button">read more</button>
+        <div class="hero-text">
+          <h1 class="hero-title">The Bright Future of Web 3.0?</h1>
+          <p class="hero-paragraph">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="button hero-button" type="button">read more</button>
+        </div>
       </section>
       <section class="news" id="news">
         <h2>New</h2>
-        <div class="new">
-          <h2>Hydrogen VS Electric Cars</h2>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
       </section>
-      <section class="articles">
-        <article class="article">
-          <div class="article-img">
-            <img
-              src="./assets/images/image-gaming-growth.jpg"
-              alt="gaming grow"
-            />
-          </div>
-          <div class="text">
-            <h2 class="text-number" id="text-number">01</h2>
-            <h3 class="text-title" id="text-title">Reviving Retro PCs</h3>
-            <p class="text-paragraph" id="text-paragraph">
-              What happens when old PCs are given modern upgrades?
-            </p>
-          </div>
-        </article>
-      </section>
+      <section class="articles" id="articles"></section>
     </main>
     <script src="./app.js"></script>
   </body>
