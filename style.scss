@@ -183,57 +183,70 @@ main {
     width: 1110px;
   }
   header {
-    margin-bottom: 20px;
-  }
-  .nav-image-close {
-    display: none;
+    margin-bottom: 40px;
   }
   .menu {
     display: none;
   }
+  .nav-image-close {
+    display: none;
+  }
   .nav {
+    background-color: transparent;
     position: absolute;
     transform: translateX(0);
-    background-color: transparent;
     width: initial;
     height: initial;
     ul {
-      font-size: 15px;
       margin-top: 0;
       display: flex;
       gap: 40px;
+      font-size: 15px;
       color: var(--DarkGrayishBlue);
     }
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: auto;
+    column-gap: 30px;
+    grid-template-areas:
+      "hero hero news"
+      "hero hero news"
+      "articles articles articles";
   }
   .hero {
     grid-area: hero;
     &-img {
-      overflow-y: hidden;
+      overflow: hidden;
       height: 300px;
     }
     &-text {
       display: grid;
       grid-template-columns: repeat(2, 350px);
-      column-gap: 30px;
+      gap: 30px;
       grid-template-areas:
-        " hero-title hero-paragraph"
+        "hero-title hero-paragraph"
         "hero-title hero-button";
     }
     &-title {
       grid-area: hero-title;
       font-size: 56px;
+      font-weight: 800;
       line-height: 56px;
     }
+
+    &-text {
+      grid-area: hero-text;
+    }
+
     &-button {
       grid-area: hero-button;
       background-color: var(--VeryDarkBlue);
       &:hover {
         background-color: var(--SoftRed);
+        cursor: pointer;
       }
-    }
-
-    &-paragraph {
-      grid-area: hero-paragraph;
     }
   }
   .news {
@@ -242,24 +255,12 @@ main {
   .articles {
     grid-area: articles;
     display: flex;
-  }
-  .article:nth-last-child(n + 2) {
-    margin-right: 30px;
+    gap: 30px;
   }
   .article-img {
-    min-width: 100px;
-    min-height: 127px;
-    overflow: hidden;
-    margin-right: 24px;
-  }
-  main {
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: 300px auto;
-    column-gap: 30px;
-    grid-template-areas:
-      "hero hero news"
-      "hero hero news"
-      "articles articles articles";
+    img {
+      min-width: 100px;
+      min-height: 120px;
+    }
   }
 }
